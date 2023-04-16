@@ -13,37 +13,39 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
   <body>
     <header>
-      <img src="imgs/logo.png" alt="" />
+      <img src="imgs/logo.png" alt="logo de Alura" />
     </header>
     <main>
-      <div>
-        <input
-          type="text"
-          id="texto1"
-          class="input-texto"
-          placeholder="Ingrese su texto aquí"
-        />
-      </div>
+      <form>
+        <fieldset>
+          <input
+            type="text"
+            id="texto1"
+            class="input-texto"
+            placeholder="Ingrese su texto aquí"
+          />
+          <!-- <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea> -->
+          <div class="ingresar-texto">
+            <ul>
+              <li class="item"> Solo letras minúsculas y sin acentos</li>
+            </ul>
+            <input type="submit" class="encriptar" value="Encriptar" />
+            <input type="submit" class="desencriptar" value="Desencriptar" />
+          </div>
+        </fieldset>
+      </form>
       <section class="rectangle">
-        <img src="imgs/img-muneco.png" alt="">
-        <p>Ningún mensaje fue encontrado</p>
-        <p>Ingresa el texto que deseas encriptar</p>
+        <img src="imgs/img-muneco.png" alt="" />
+        <p class="msj1">Ningún mensaje fue encontrado</p>
+        <p class="msj2">Ingresa el texto que deseas encriptar</p>
       </section>
     </main>
+    
 
-    <footer>
-      <div>
-        <ul>
-          <li>Solo letras minúsculas y sin acentos</li>
-        </ul>
-      </div>
-      <div>
-        <button name="button">Encriptar</button>
-        <button name="button">Desencriptar</button>
-      </div>
-    </footer>
+    <footer></footer>
   </body>
 </html>
