@@ -15,7 +15,8 @@ function encriptar() {
 
   document.getElementById("muneco").style.display = "none";
   document.getElementById("msj1").style.display = "none";
-  document.getElementById("msj2").innerHTML = textoCifrado;
+  document.getElementById("msj2").style.display = "none";
+  document.getElementById("msj3").innerHTML = textoCifrado;
   document.getElementById("texto1").innerHTML = " ";
   document.getElementById("copiar").style.display = "show";
   document.getElementById("copiar").style.display = "inherit";
@@ -33,7 +34,8 @@ function desencriptar() {
 
   document.getElementById("muneco").style.display = "none";
   document.getElementById("msj1").style.display = "none";
-  document.getElementById("msj2").innerHTML = textoCifrado;
+  document.getElementById("msj2").style.display = "none";
+  document.getElementById("msj3").innerHTML = textoCifrado;
   document.getElementById("texto1").innerHTML = " ";
   document.getElementById("copiar").style.display = "show";
   document.getElementById("copiar").style.display = "inherit";
@@ -48,7 +50,7 @@ function desencriptar() {
 // }
 
 function copyToClickBoard(){
-    var content = document.getElementById('copiar').innerHTML;
+    let content = document.getElementById('msj3').innerHTML;
 
     navigator.clipboard.writeText(content)
         .then(() => {

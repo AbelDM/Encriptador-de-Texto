@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encriptador de texto - Alura</title>
+    <title>Encriptador de texto - ORACLE ONE</title>
+    <link rel="icon" type="image/svg+xml" href="./imgs/favicon/favicon.svg">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+    rel="stylesheet"/>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
   </head>
   <body>
     <!-- SECCION 1 - Logo -->
     <header>
-        <div class="caja">  
-        <img src="imgs/logo.png" alt="logo de Alura" />
-          <nav>
+        <div class="caja">          
+        <img src="imgs/a-logo.svg" alt="logo de Alura" />
+               
+        <nav>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Sobre el proyecto</a></li>
           </nav>
@@ -33,8 +34,7 @@
       <section class="seccion2"></div>
         <form>        
         <fieldset>
-          <input type="textarea" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí">
-          <!-- </textarea>           -->
+          <textarea type="textarea" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí"></textarea>          
             <ul>
               <li class="item"> Solo letras minúsculas y sin acentos</li>
             </ul>
@@ -45,12 +45,16 @@
     </section>
 
     <!-- SECCION 3 - CAJA DE RESULTADO DE ENCRIPTACIÓN -->
-      <div class="rectangle">
+      <section class="seccion3">
         <img id="muneco" src="imgs/img-muneco.png" alt="" />
         <p id="msj1"><strong>Ningún mensaje fue encontrado</strong></p>
-        <textarea id="msj2">Ingrese el texto que deseas encriptar o desencriptar</textarea>
+        <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
+
+        
+        <p id="msj3"></p>
         <button type="button" name="copiar" id="copiar" onclick="copyToClickBoard()">Copiar</button>
-      </div>    
+       
+      </section>    
 
     <footer>
       <p class="copy">&copy Copyright AbelDM 2023</p>

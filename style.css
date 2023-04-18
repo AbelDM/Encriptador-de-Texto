@@ -60,6 +60,7 @@ header img {
   background: #f3f5fc;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .input-texto {
@@ -67,7 +68,7 @@ header img {
   width: 577px;
   height: 348px;
   left: 320px;
-  top: 190px;
+  top: 200px;
   background: none;
   border: none;
   outline: none;
@@ -76,6 +77,8 @@ header img {
   font-style: normal;
   font-weight: 400;
   color: #0A3871;
+  display: block;
+  resize: none;
 }
 
 .input-texto::placeholder {
@@ -128,7 +131,7 @@ button {
 }
 
 .encriptar:hover {
-  background: #d8dfe8;
+  background: #0a3871;
   transform: scale(1.2);
 }
 
@@ -152,17 +155,17 @@ button {
   color: white;
 }
 
-.rectangle {
+/* SECCION 3 */
+
+.seccion3 {
   position: absolute;
   width: 400px;
   height: 850px;
   left: 1100px;
   top: 40px;
   background: #ffffff;
-  /* shadow */
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); /* shadow */
   border-radius: 32px;
-  text-align: center;
 }
 
 #muneco {
@@ -184,24 +187,43 @@ button {
 #msj2 {
   position: relative;
   top: 300px;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  height: 200px;
+}
+
+#msj3 {
+
+  position: absolute;
+  width: 336px;
+  top: 50px;
+  font-size: 24px;
   border: none;
   outline: none;
-  width: 90%;
+  height: 300px;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #495057;
+  left: 30px;
+  text-align: justify;
 }
 
 #copiar {
   width: 90%;
   position: relative;
   text-align: center;
-  top: 350px;
+  top: 550px;
   background: #fff;
   border: 1px solid #0a3871;
   border-radius: 15px;
   transition: 1s all;
   cursor: pointer;
   display: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 #copiar:hover {
