@@ -8,7 +8,7 @@ function encriptar() {
   let texto = document.getElementById("texto1").value.toLowerCase(); 
 
   if (texto.length == 0 || /^\s+|\s+$/.test(texto)) {
-    alert("No ha escrito texto, por favor escríbe el texto que desea ENCRIPTAR");
+      alert("No ha escrito texto, por favor escríbe el texto que desea ENCRIPTAR");
     return false;
   } else {
     let textoCifrado = texto.replace(/e/gim, "enter");
@@ -30,10 +30,8 @@ function encriptar() {
 function desencriptar() {
   let texto = document.getElementById("texto1").value.toLowerCase();
 
-  if (texto === "") {
-    alert(
-      "No ha escrito texto, por favor escríbe el texto que desea DESENCRIPTAR"
-    );
+  if (texto.length == 0 || /^\s+|\s+$/.test(texto)) {
+     alert("No ha escrito texto, por favor escríbe el texto que desea DESENCRIPTAR");
     return false;
   } else {
     let textoCifrado = texto.replace(/enter/gim, "e");
@@ -51,13 +49,8 @@ function desencriptar() {
     document.getElementById("copiar").style.display = "inherit";
   }
 }
-// function copiar() {
-//   let contenido = document.getElementById('msj2');
-//   contenido.select();
-//   document.execCommand("copy");
-//   alert("Se ha copiado con éxito!");
-// }
 
+// FUNCIÓN PARA COPIAR TEXTO
 function copyToClickBoard() {
   let content = document.getElementById("msj3").innerHTML;
 
@@ -95,4 +88,19 @@ function limpia() {
   for (i = 0; i < tam; i++) {
     if (!isNaN(val[i])) document.getElementById("texto1").value == 0;
   }
+}
+
+//BANDERA PARA EL FOOTER :)
+function banderaPeru(){
+  let pantalla = document.querySelector("canvas");
+  let pincel = pantalla.getContext("2d");
+
+  pincel.fillStyle = "white"; // esto es una propiedad
+  pincel.fillRect(0, 0, 15, 10) // esto es una función
+
+  pincel.fillStyle = "red"; // esto es una propiedad
+  pincel.fillRect(0, 0, 5, 10) // esto es una función
+
+  pincel.fillStyle = "red"; // esto es una propiedad
+  pincel.fillRect(10, 0, 5, 10) // esto es una función
 }

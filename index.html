@@ -19,7 +19,7 @@
   <body>
     <!-- SECCION 1 - Logo -->
     <header>
-        <div class="caja">
+        <div> <!--class="caja"-->
           <a href="index.html"><img src="imgs/a-logo.svg" alt="logo de Alura" /></a>  
         <nav>
             <li><a href="index.html">Inicio</a></li>
@@ -51,12 +51,25 @@
         <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
 
         <p id="msj3"></p>
-        <button type="button" name="copiar" id="copiar" onclick="copyToClickBoard()">Copiar</button>
+        <div class="btn-copiar">
+          <button  id="copiar" type="button" name="copiar" onclick="copyToClickBoard()">Copiar</button>
+        </div>
        
       </section>    
 
     <footer>
-      <p class="copy">&copy Copyright AbelDM 2023</p>
+      <p class="copy">&copy <script>document.write(new Date().getFullYear())</script> Proudly developed in <canvas width="15" height="10"></canvas> <strong>by Abel Daza Monteiro</strong></p>
     </footer>
+
+    <script> //BANDERA DE PERU
+      let pantalla = document.querySelector("canvas");
+      let pincel = pantalla.getContext("2d");
+      pincel.fillStyle = "white"; 
+      pincel.fillRect(0, 0, 15, 10);
+      pincel.fillStyle = "red";
+      pincel.fillRect(0, 0, 5, 10);
+      pincel.fillStyle = "red";
+      pincel.fillRect(10, 0, 5, 10);
+    </script>
   </body>
 </html>
