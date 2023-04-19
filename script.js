@@ -79,7 +79,7 @@ function soloLetras(e) {
     }
   }
 
-  if (letras.indexOf(tecla) == -1 && !tecla_especial) return false;
+  // if (letras.indexOf(tecla) == -1 && !tecla_especial) return false;
 }
 
 function limpia() {
@@ -103,4 +103,8 @@ function banderaPeru(){
 
   pincel.fillStyle = "red"; // esto es una propiedad
   pincel.fillRect(10, 0, 5, 10) // esto es una función
+}
+
+function espacio(){
+  document.write("</br></br></br>");
 }

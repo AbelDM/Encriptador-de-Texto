@@ -5,12 +5,6 @@ body {
   font-weight: 400;
 }
 
-/* .caja {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-} */
-
 /* SECCION 1 */
 nav {
   position: absolute;
@@ -71,7 +65,7 @@ header img {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #0A3871;
+  color: #0a3871;
   display: block;
   resize: none;
 }
@@ -82,7 +76,7 @@ header img {
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
-  color: #0A3871;
+  color: #0a3871;
 }
 
 .item {
@@ -97,7 +91,9 @@ header img {
   content: url("https://api.iconify.design/bi/exclamation-circle-fill.svg");
 }
 
-#boton1, #boton2, #copiar {
+#boton1,
+#boton2,
+#copiar {
   position: absolute;
   width: 300px;
   height: 48px;
@@ -181,8 +177,8 @@ header img {
   color: #0a3871;
 }
 
-.btn-copiar{
-  display:block;
+.btn-copiar {
+  display: block;
   justify-content: center;
 }
 
@@ -207,7 +203,7 @@ header img {
   font-size: 18px;
   text-align: center;
   height: 200px;
-  line-height: 1.4em;  /* Altura de una línea (interlineado) */ 
+  line-height: 1.4em; /* Altura de una línea (interlineado) */
 }
 
 #msj3 {
@@ -233,7 +229,7 @@ footer {
   padding: 40px;
 }
 
-footer p strong{
+footer p strong {
   font-weight: bold;
 }
 
@@ -241,22 +237,49 @@ footer p strong{
   color: #0a3871;
   font-size: 13px;
   margin-top: 780px;
+}
 
+.about {
+  position: absolute;
+  left: 400px;
+  width: 50%;
+  height: 350px;
+  padding: 3em 0;
+  margin: 0 auto;
+  top: 115px;
+  justify-content: justify;
+
+}
+
+div h2{
+  font-size: 22px;
+  font-weight: bold;
+  color:#0a3871;
+}
+
+div p{
+  line-height: 1.5em;
+  justify-content: justify;
 }
 
 /* Responsive design Mobile */
 
-@media screen and (max-width:480px){
-  h1{
+@media screen and (max-width: 480px) {
+  h1 {
     text-align: center;
   }
-  nav{
+  nav {
     position: static;
   }
-  .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales,
+  .video {
     width: auto;
   }
-  .lista-diferenciales, .imagenDiferenciales{
+  .lista-diferenciales,
+  .imagenDiferenciales {
     width: 100%;
   }
 }

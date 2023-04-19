@@ -8,12 +8,10 @@
     <link rel="icon" type="image/svg+xml" href="./imgs/favicon/favicon.svg">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
     rel="stylesheet"/>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     
   </head>
   <body>
@@ -23,39 +21,41 @@
           <a href="index.html"><img src="imgs/a-logo.svg" alt="logo de Alura" /></a>  
         <nav>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre el proyecto</a></li>
           </nav>
         </div>
     </header>
 
     <!-- SECCION 2 - INGRESO DE TEXTO + BOTONES -->
-    <main>
-      <section class="seccion2">
-               
-        <fieldset>
-          <textarea type="textarea" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí" onkeypress="return soloLetras(event)" onblur="limpia()"></textarea>  <!-- onblur="limpia()"   -->
-          
-            <ul>
-              <li class="item"> Solo letras minúsculas y sin acentos</li>
-            </ul>
-            <button type="button" class="encriptar" id="boton1" onclick="encriptar()">Encriptar</button>
-            <button type="button" class="desencriptar" id="boton2" onclick="desencriptar()">Desencriptar</button>
-        </fieldset>
-      
-    </section>
+    
+      <div class="about">
+        <h2>✪ Sobre el autor ✪</h2></br>
 
-    <!-- SECCION 3 - CAJA DE RESULTADO DE ENCRIPTACIÓN -->
-      <section class="seccion3">
-        <img id="muneco" src="imgs/img-muneco.png" alt="" />
-        <p id="msj1"><strong>Ningún mensaje fue encontrado</strong></p>
-        <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
+        <p id="about">
+            Hola, mi nombres Abel Daza y soy un estudiante de Alura para el programa ONE - Oracle Next Education, como parte
+            del grupo 5 del programa.
+            Actualmente, vengo cursando los cursos introductorios de HTML, CSS y Javascript y estoy muy emocionado
+            por compartir y aprender nuevos conocimientos..
+        </p></br>
+        
+        <h2>✪ Sobre el reto ✪</h2></br>
+        <p>Este es el primer reto en mi aprendizaje con los cursos y trata sobre un Encriptador de texto, 
+            donde podemos encriptar o desencriptar textos.
+            El reto consta del Sprint 01: Construye un encriptador de texto con Javascript.</p>
 
-        <p id="msj3"></p>
-        <div class="btn-copiar">
-          <button  id="copiar" type="button" name="copiar" onclick="copyToClickBoard()">Copiar</button>
-        </div>
-       
-      </section>    
+            <p>Conocer más sobre el reto <a href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript" target="_blank">AQUÍ</a></p>
+        
+        </p></br>
+        
+        <h2>✪ Tecnologías utilizadas ✪</h2></br>
+        <p>El presente Encriptador de texto fue realizado con HTML, CSS y Javascript:</p></br>
+        <img src="imgs/iconos/html-css-js.png" width="200px"></br></br>
+
+        <h2>✪ Más información ✪</h2></br>
+        <p>Para obtener más información sobre este proyecto, puede obtenerlo en mi cuenta personal de GitHub</p></br>
+        <a href="https://github.com/AbelDM/Encriptador-de-Texto/" target="_blank"><img src="imgs/iconos/github.png" width="150px"></a>
+      </div>
+    
+
 
     <footer>
       <p class="copy">&copy <script>document.write(new Date().getFullYear())</script> Proudly developed in <canvas width="15" height="10"></canvas> <strong>by Abel Daza Monteiro</strong> for <strong>Alura</strong> and<strong> ORACLE ONE – Oracle Next Education</strong></p>
