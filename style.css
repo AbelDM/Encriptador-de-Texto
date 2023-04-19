@@ -13,8 +13,8 @@ body {
 
 nav {
   position: absolute;
-  top: 75px;
-  left: 350px;
+  top: 55px;
+  left: 300px;
 }
 
 nav li {
@@ -46,12 +46,11 @@ header img {
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-
   position: absolute;
   width: 120px;
   height: 48px;
   left: 80px;
-  top: 60px;
+  top: 55px;
 }
 
 /* SECCION 2 */
@@ -110,9 +109,9 @@ header img {
   content: url("https://api.iconify.design/bi/exclamation-circle-fill.svg");
 }
 
-button {
+#boton1, #boton2, #copiar {
   position: absolute;
-  width: 577px;
+  width: 300px;
   height: 48px;
 }
 
@@ -132,7 +131,7 @@ button {
 
 .encriptar:hover {
   background: #0a3871;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .desencriptar {
@@ -166,11 +165,11 @@ button {
   background: #ffffff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); /* shadow */
   border-radius: 32px;
+  text-align: center;
 }
 
 #muneco {
   position: relative;
-  text-align: center;
   width: 336px;
   height: 304px;
   top: 250px;
@@ -193,14 +192,14 @@ button {
 }
 
 #msj3 {
-
   position: absolute;
   width: 336px;
+  height: 348px;
   top: 50px;
   font-size: 24px;
   border: none;
   outline: none;
-  height: 300px;
+  height: 200px;
   resize: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -211,10 +210,8 @@ button {
 }
 
 #copiar {
-  width: 90%;
-  position: relative;
   text-align: center;
-  top: 550px;
+  top: 760px;
   background: #fff;
   border: 1px solid #0a3871;
   border-radius: 15px;

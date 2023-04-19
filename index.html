@@ -19,9 +19,8 @@
   <body>
     <!-- SECCION 1 - Logo -->
     <header>
-        <div class="caja">          
-        <img src="imgs/a-logo.svg" alt="logo de Alura" />
-               
+        <div class="caja">
+          <a href="index.html"><img src="imgs/a-logo.svg" alt="logo de Alura" /></a>  
         <nav>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Sobre el proyecto</a></li>
@@ -32,16 +31,17 @@
     <!-- SECCION 2 - INGRESO DE TEXTO + BOTONES -->
     <main>
       <section class="seccion2"></div>
-        <form>        
+               
         <fieldset>
-          <textarea type="textarea" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí"></textarea>          
+          <textarea type="textarea" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí" onkeypress="return soloLetras(event)" onblur="limpia()"></textarea>  <!-- onblur="limpia()"   -->
+          
             <ul>
               <li class="item"> Solo letras minúsculas y sin acentos</li>
             </ul>
-            <button type="button" class="encriptar" onclick="encriptar()">Encriptar</button>
-            <button type="button" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            <button type="button" class="encriptar" id="boton1" onclick="encriptar()">Encriptar</button>
+            <button type="button" class="desencriptar" id="boton2" onclick="desencriptar()">Desencriptar</button>
         </fieldset>
-      </form>
+      
     </section>
 
     <!-- SECCION 3 - CAJA DE RESULTADO DE ENCRIPTACIÓN -->
@@ -50,7 +50,6 @@
         <p id="msj1"><strong>Ningún mensaje fue encontrado</strong></p>
         <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
 
-        
         <p id="msj3"></p>
         <button type="button" name="copiar" id="copiar" onclick="copyToClickBoard()">Copiar</button>
        
