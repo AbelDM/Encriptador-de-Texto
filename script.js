@@ -20,7 +20,7 @@ function encriptar() {
     document.getElementById("muneco").style.display = "none";
     document.getElementById("msj1").style.display = "none";
     document.getElementById("msj2").style.display = "none";
-    document.getElementById("msj3").innerHTML = textoCifrado.charAt(0).toUpperCase().concat(textoCifrado.substring(1, textoCifrado.length));
+    document.getElementById("msj3").innerHTML = textoCifrado; //.charAt(0).toUpperCase().concat(textoCifrado.substring(1, textoCifrado.length))
     document.getElementById("texto1").innerHTML = " ";
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
@@ -43,7 +43,7 @@ function desencriptar() {
     document.getElementById("muneco").style.display = "none";
     document.getElementById("msj1").style.display = "none";
     document.getElementById("msj2").style.display = "none";
-    document.getElementById("msj3").innerHTML = textoCifrado.charAt(0).toUpperCase().concat(textoCifrado.substring(1, textoCifrado.length));
+    document.getElementById("msj3").innerHTML = textoCifrado;
     document.getElementById("texto1").innerHTML = " ";
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
@@ -68,7 +68,7 @@ function copyToClickBoard() {
 function soloLetras(e) {
   key = e.keyCode || e.which;
   tecla = String.fromCharCode(key).toLowerCase();
-  letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+  letras = " abcdefghijklmnñopqrstuvwxyz";
   especiales = [8, 37, 39, 46];
 
   tecla_especial = false;
@@ -79,14 +79,14 @@ function soloLetras(e) {
     }
   }
 
-  // if (letras.indexOf(tecla) == -1 && !tecla_especial) return false;
+  if (letras.indexOf(tecla) == -1 && !tecla_especial) return false;
 }
 
 function limpia() {
   var val = document.getElementById("texto1").value;
   var tam = val.length;
   for (i = 0; i < tam; i++) {
-    if (!isNaN(val[i])) document.getElementById("texto1").value == 0;
+    if (!isNaN(val[i])) document.getElementById("texto1").value == "";
   }
 }
 
@@ -103,8 +103,4 @@ function banderaPeru(){
 
   pincel.fillStyle = "red"; // esto es una propiedad
   pincel.fillRect(10, 0, 5, 10) // esto es una función
-}
-
-function espacio(){
-  document.write("</br></br></br>");
 }
