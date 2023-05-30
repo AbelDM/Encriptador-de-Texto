@@ -29,4 +29,20 @@ El resultado debe ser mostrado en la pantalla.
 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 #Capturas del sistema
+##Portada
 # ![Inicio del sistema](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/01.png)
+
+##Encriptador
+# ![Encriptador](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/02%20encriptar.png)
+
+##Copiar
+# ![Copiar](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/03%20copiar.png)
+
+##Descencriptar
+# ![Desencriptar](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/03%20desencriptar.png)
+
+##About
+# ![About](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/04%20about%20section.png)
+
+##Versión Móvil
+# ![Responsive](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/05%20resposive%20mobile%2001.png)
