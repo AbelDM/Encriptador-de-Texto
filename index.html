@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encriptador de texto - ORACLE ONE</title>
-    <link rel="icon" type="image/svg+xml" href="./imgs/favicon/favicon.svg">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-    rel="stylesheet"/>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    
-  </head>
-  <body>
-    <!-- SECCION 1 - Logo -->
-    <header>
-        <div> <!--class="caja"-->
-          <a href="index.html"><img src="imgs/a-logo.svg" alt="logo de Alura" /></a>  
-        <nav>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre el proyecto</a></li>
-          </nav>
-        </div>
-    </header>
 
-    <!-- SECCION 2 - INGRESO DE TEXTO + BOTONES -->
-    <main>
-      <section class="seccion2">
-               
-        <fieldset>
-          <textarea type="text" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí" onkeypress="return soloLetras(event)" onblur="limpia()"></textarea>  <!-- onblur="limpia()"   -->
-          
-            <ul>
-              <li class="item"> Solo letras minúsculas y sin acentos</li>
-            </ul>
-            <button type="button" class="encriptar" id="boton1" onclick="encriptar()">Encriptar</button>
-            <button type="button" class="desencriptar" id="boton2" onclick="desencriptar()">Desencriptar</button>
-        </fieldset>
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Encriptador de texto - ORACLE ONE</title>
+  <link rel="icon" type="image/svg+xml" href="./imgs/favicon/favicon.svg">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+  <!-- SECCION 1 - Logo - Menu -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="imgs/a-logo.svg" alt="logo de Alura" /></a>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">
+      &#8801
+    </label>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre el proyecto</a>
+      <label for="check" class="ocultar-menu">
+        &#215
+      </label>
+    </nav>
+  </header>
+
+  <!-- SECCION 2 - INGRESO DE TEXTO + BOTONES -->
+  <main class="principal">
+    <section class="seccion2">
+      <textarea type="text" id="texto1" name="texto1" class="input-texto" placeholder="Ingrese su texto aquí"
+        onkeypress="return soloLetras(event)" onblur="limpia()" onkeyup="javascript:this.value=this.value.toLowerCase();"></textarea> <!-- onblur="limpia()"   -->
+      <p class="item"> Solo letras minúsculas y sin acentos</p>
+      <section class="botones">
+        <button type="button" class="encriptar" id="boton1" onclick="encriptar()">Encriptar</button>
+        <button type="button" class="desencriptar" id="boton2" onclick="desencriptar()">Desencriptar</button>
+      </section>
     </section>
 
     <!-- SECCION 3 - CAJA DE RESULTADO DE ENCRIPTACIÓN -->
-      <section class="seccion3">
-        <img id="muneco" src="imgs/img-muneco.png" alt="" />
-        <p id="msj1"><strong>Ningún mensaje fue encontrado</strong></p>
-        <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
+    <section class="seccion3">
+      <img id="muneco" src="imgs/img-muneco.png" alt="" />
+      <p id="msj1"><strong>Ningún mensaje fue encontrado</strong></p>
+      <p id="msj2">Ingrese el texto que deseas encriptar o desencriptar</p>
 
-        <p id="msj3"></p>
-        <div class="btn-copiar">
-          <button  id="copiar" type="button" name="copiar" onclick="copyToClickBoard()">Copiar</button>
-        </div>
-       
-      </section>    
+      <p id="msj3"></p>
+      <div class="btn-copiar">
+        <button id="copiar" type="button" name="copiar" onclick="copyToClickBoard()">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="copyright">&copy
+      <script>document.write(new Date().getFullYear())</script> Proudly developed in <canvas width="15"
+        height="10"></canvas> <strong>by Abel Daza Monteiro</strong> for <strong>Alura</strong> and<strong> ORACLE ONE –
+        Oracle Next Education</strong>
+    </p>
+  </footer>
 
-    <footer>
-      <p class="copy">&copy <script>document.write(new Date().getFullYear())</script> Proudly developed in <canvas width="15" height="10"></canvas> <strong>by Abel Daza Monteiro</strong> for <strong>Alura</strong> and<strong> ORACLE ONE – Oracle Next Education</strong></p>
-    </footer>
+  <script> //BANDERA DE PERU
+    let pantalla = document.querySelector("canvas");
+    let pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "white";
+    pincel.fillRect(0, 0, 15, 10);
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 0, 5, 10);
+    pincel.fillStyle = "red";
+    pincel.fillRect(10, 0, 5, 10);
+  </script>
+</body>
 
-    <script> //BANDERA DE PERU
-      let pantalla = document.querySelector("canvas");
-      let pincel = pantalla.getContext("2d");
-      pincel.fillStyle = "white"; 
-      pincel.fillRect(0, 0, 15, 10);
-      pincel.fillStyle = "red";
-      pincel.fillRect(0, 0, 5, 10);
-      pincel.fillStyle = "red";
-      pincel.fillRect(10, 0, 5, 10);
-    </script>
-  </body>
 </html>
