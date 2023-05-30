@@ -64,7 +64,7 @@ header {
 }
 
 .principal2 {
-  width: auto;
+  width: 100%;
   padding-top: 5px;
   justify-content: center;
   align-items: center;
@@ -244,7 +244,7 @@ header {
 }
 
 #msj3 {
-  width: 336px;
+  width: 556px;
   height: 348px;
   top: 50px;
   font-size: 30px;
@@ -331,8 +331,10 @@ a.button {
   .principal, .principal2 {
     width: 100%;
   }
-  
-
+  .menu{
+    position: fixed;
+    width: 100%;
+  }
 }
 
 @media(min-width:360px) {
