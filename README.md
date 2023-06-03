@@ -44,3 +44,6 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 ## Versión Móvil
 # ![Responsive](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/05%20resposive%20mobile%2001.png)
+
+# Insignia:
+# ![Insignia](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/insignia.png)
