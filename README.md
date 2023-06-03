@@ -46,4 +46,5 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 # ![Responsive](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/05%20resposive%20mobile%2001.png)
 
 # Insignia:
+La siguiente insignia se me fue asignada al haber cumplido con el reto N° 1 de mis cursos del Programa ONE.
 # ![Insignia](https://raw.githubusercontent.com/AbelDM/Encriptador-de-Texto/main/capturas%20del%20sistema/insignia.png)
